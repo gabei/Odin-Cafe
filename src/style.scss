@@ -9,6 +9,10 @@ $color--black: #121212;
 $color--grey: #2b2b2b;
 $color--white: #fafafa;
 
+/* transitions
+________________________________*/
+$transition-default: 0.2s all;
+
 /* font sizes
 ________________________________*/
 h1 {
@@ -44,6 +48,22 @@ html {
 
 body {
   font-size: 1.6rem;
+}
+
+/* link button 
+________________________________*/
+@mixin btn-default {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: $color---green-light;
+  color: $color--white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition-default;
+
+  &:hover {
+    background: $color---gold;
+  }
 }
 
 /* header
@@ -91,5 +111,30 @@ ________________________________*/
     position: absolute;
     top: 40%;
     left: 20%;
+  }
+}
+
+/* order online
+________________________________*/
+.order-online {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    text-align: center;
+
+    & h2 {
+      margin-bottom: 2rem;
+    }
+
+    & p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__button {
+    @include btn-default;
   }
 }
