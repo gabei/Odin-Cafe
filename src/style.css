@@ -1,3 +1,7 @@
+/* colors
+________________________________*/
+/* reset
+________________________________*/
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -11,6 +15,14 @@ html {
 
 body {
   font-size: 1.6rem;
+}
+
+/* header
+________________________________*/
+.header__logo {
+  background: #efe7da;
+  padding: 2rem;
+  border: 1px solid #333;
 }
 
 /*# sourceMappingURL=style.css.map */
