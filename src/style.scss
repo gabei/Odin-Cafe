@@ -7,3 +7,19 @@ $color--linen: #efe7da;
 $color--black: #121212;
 $color--grey: #2b2b2b;
 $color--white: #fafafa;
+
+//reset
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
