@@ -170,12 +170,9 @@ ________________________________*/
 /* info
 ________________________________*/
 .info {
+  @include clear-fix;
   > div {
     float: left;
-  }
-
-  &:nth-child(2) {
-    @include clear-fix;
   }
 
   &__text {
