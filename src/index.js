@@ -1,4 +1,5 @@
 import { createElement } from './DOM/DOM.js';
+import './style.scss';
 
 const content = createElement('div', 'content');
 document.body.appendChild(content);
@@ -32,3 +33,7 @@ for (let item of menuItems) {
 }
 
 header.appendChild(menu);
+
+/*******************/
+/****** Hero *******/
+/*******************/
