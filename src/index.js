@@ -1,30 +1,34 @@
+import { createElement } from './DOM/DOM.js';
+
 const content = createElement('div', 'content');
 document.body.appendChild(content);
 
+/*********************/
+/****** Header *******/
+/*********************/
 const header = createElement('div', 'header');
 content.appendChild(header);
 
+/* logo */
 const logo = createElement('div', 'header__logo');
 logo.textContent = 'Logo\ngoes\nhere.';
-
-const menu = createElement('div', 'header__menu');
-const menuList = createElement('ul');
 header.appendChild(logo);
 
-/***************************/
-/****** DOM Creation *******/
-/***************************/
-function createElement(type = 'div', ...classes) {
-  const newElement = document.createElement(type);
-  addClasses(newElement, ...classes);
+/* menu */
+const menu = createElement('div', 'header__menu');
+const menuList = createElement('ul');
+menu.appendChild(menuList);
 
-  return newElement;
+const menuItems = [
+  '<a href="#">Home</a>',
+  '<a href="#">Menu</a>',
+  '<a href="#">Contact</a>',
+];
+
+for (let item of menuItems) {
+  let newItem = createElement('li');
+  newItem.innerHTML = item;
+  menuList.appendChild(newItem);
 }
 
-function addClasses(element, ...classes) {
-  if (classes) {
-    classes.forEach((newClass) => {
-      element.classList.add(newClass);
-    });
-  }
-}
+header.appendChild(menu);
