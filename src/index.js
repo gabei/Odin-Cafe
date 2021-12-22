@@ -92,7 +92,7 @@ const orderOnlineText = createElement('div', 'order-online__text');
 orderOnline.append(orderOnlineText);
 
 const orderOnlineTextHeader = createElement('h2');
-orderOnlineTextHeader.textContent = "Order online or don't. Whatever";
+orderOnlineTextHeader.textContent = "Order online - or don't. Whatever";
 
 const orderOnlineTextPara = createElement('p');
 orderOnlineTextPara.textContent =
@@ -107,3 +107,9 @@ orderOnlineText.append(
   orderOnlineTextPara,
   orderOnlineButton
 );
+
+/*********************/
+/****** Images *******/
+/*********************/
+const images = createElement('section', 'images');
+content.append(images);
