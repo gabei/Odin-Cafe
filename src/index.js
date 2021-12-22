@@ -37,3 +37,16 @@ header.appendChild(menu);
 /*******************/
 /****** Hero *******/
 /*******************/
+const hero = createElement('div', 'hero');
+const heroText = createElement('div', 'hero__text');
+
+const heroTextContent = createElement('h1');
+heroTextContent.textContent = 'Here is a promise that we will keep.';
+
+hero.append(heroText);
+heroText.append(heroTextContent);
+content.append(hero);
+
+/*******************/
+/****** Info *******/
+/*******************/

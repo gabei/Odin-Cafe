@@ -119,6 +119,10 @@ ________________________________*/
       display: inline-block;
       padding: 1rem;
       background-color: $color--linen;
+
+      & a {
+        text-decoration: none;
+      }
     }
   }
 }
