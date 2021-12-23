@@ -100,16 +100,21 @@ body {
 ________________________________*/
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 100%;
+  border-bottom: 1px solid rgba($color--white, 0.3);
 
   & > * {
     display: inline-block;
   }
 
   &__logo {
-    background: $color--linen;
-    padding: 2rem;
-    border: 1px solid #333;
+    padding: 3rem 0 0 3rem;
+
+    & img {
+      max-width: 10rem;
+    }
   }
 
   &__menu {
@@ -124,16 +129,16 @@ ________________________________*/
     & li {
       display: inline-block;
       padding: 1rem;
-      background-color: $color--linen;
 
       & a {
         text-decoration: none;
+        color: $color--white;
       }
     }
   }
 }
 
-/* header
+/* hero
 ________________________________*/
 .hero {
   background: linear-gradient(
@@ -143,7 +148,7 @@ ________________________________*/
     ),
     url('./assets/images/cafe3.jpg');
   background-size: cover;
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   display: flex;
 

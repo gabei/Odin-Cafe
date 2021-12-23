@@ -6,22 +6,39 @@ import Image2 from './assets/images/cafe2.jpg';
 import Image3 from './assets/images/cafe3.jpg';
 import Image4 from './assets/images/cafe4.jpg';
 import Image5 from './assets/images/cafe5.jpg';
+import OdinBrewLogo from './assets/images/OdinBrewLogo.png';
 
 import Map from './assets/googleMap/map.html';
 
 const content = createElement('div', 'content');
 document.body.appendChild(content);
 
+/*******************/
+/****** Hero *******/
+/*******************/
+const hero = createElement('section', 'hero');
+const heroText = createElement('div', 'hero__text');
+
+const heroTextContent = createElement('h1');
+heroTextContent.textContent = 'Here is a promise that we will keep.';
+
+hero.append(heroText);
+heroText.append(heroTextContent);
+content.append(hero);
+
 /*********************/
 /****** Header *******/
 /*********************/
 const header = createElement('section', 'header');
-content.appendChild(header);
+hero.appendChild(header);
 
 /* logo */
 const logo = createElement('div', 'header__logo');
-logo.textContent = 'Logo\ngoes\nhere.';
-header.appendChild(logo);
+header.append(logo);
+
+const logoImage = createElement('img');
+logoImage.src = OdinBrewLogo;
+logo.append(logoImage);
 
 /* menu */
 const menu = createElement('div', 'header__menu');
@@ -41,19 +58,6 @@ for (let item of menuItems) {
 }
 
 header.appendChild(menu);
-
-/*******************/
-/****** Hero *******/
-/*******************/
-const hero = createElement('section', 'hero');
-const heroText = createElement('div', 'hero__text');
-
-const heroTextContent = createElement('h1');
-heroTextContent.textContent = 'Here is a promise that we will keep.';
-
-hero.append(heroText);
-heroText.append(heroTextContent);
-content.append(hero);
 
 /*******************/
 /****** Info *******/
