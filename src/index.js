@@ -148,3 +148,13 @@ for (let src of images) {
 /*********************/
 /****** Footer *******/
 /*********************/
+const footer = createElement('section', 'footer');
+content.append(footer);
+
+const footerLeft = createElement('div', 'footer__left');
+const footerRight = createElement('div', 'footer__right');
+footer.append(footerLeft, footerRight);
+
+footerLeft.textContent = 'Odin Cafe | Austin, TX';
+footerRight.textContent = "Order online - or don't. Whatever.";
+footerRight.append(orderOnlineButton);

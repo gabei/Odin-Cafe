@@ -221,3 +221,21 @@ ________________________________*/
     grid-row: span 2;
   }
 }
+
+/* footer
+________________________________*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  &__left {
+  }
+
+  &__right {
+    & a {
+      margin-left: 1rem;
+    }
+  }
+}
