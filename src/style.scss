@@ -39,6 +39,12 @@ ________________________________*/
   list-style-type: none;
 }
 
+/* menu borders and hovers
+________________________________*/
+@mixin menu-borders {
+  border-bottom: 1px solid rgba($color--white, 0.3);
+}
+
 /****************************/
 /****************************/
 /****************************/
@@ -99,11 +105,11 @@ body {
 /* header
 ________________________________*/
 .header {
+  @include menu-borders;
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
   width: 100%;
-  border-bottom: 1px solid rgba($color--white, 0.3);
 
   & > * {
     display: inline-block;
@@ -129,6 +135,13 @@ ________________________________*/
     & li {
       display: inline-block;
       padding: 1rem;
+      border-bottom: 1px solid transparent;
+      transition: $transition-default;
+
+      &:hover {
+        @include menu-borders;
+        border-color: $color--white;
+      }
 
       & a {
         text-decoration: none;
