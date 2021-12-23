@@ -137,8 +137,26 @@ ________________________________*/
 
   &__text {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 50%;
+    left: 10%;
+  }
+}
+
+/* info
+________________________________*/
+.info {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__text {
+    &--hours {
+      @include ul-default;
+    }
+  }
+
+  &__map {
+    max-width: 50%;
   }
 }
 
@@ -164,23 +182,6 @@ ________________________________*/
 
   &__button {
     @include btn-default;
-  }
-}
-
-/* info
-________________________________*/
-.info {
-  @include clear-fix;
-  > div {
-    float: left;
-  }
-
-  &__text {
-    &--hours {
-      & ul {
-        @include ul-default;
-      }
-    }
   }
 }
 

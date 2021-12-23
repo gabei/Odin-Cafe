@@ -7,6 +7,8 @@ import Image3 from './assets/images/cafe3.jpg';
 import Image4 from './assets/images/cafe4.jpg';
 import Image5 from './assets/images/cafe5.jpg';
 
+import Map from './assets/googleMap/map.html';
+
 const content = createElement('div', 'content');
 document.body.appendChild(content);
 
@@ -66,7 +68,7 @@ info.append(infoText);
 const infoTextScheduleHeading = createElement('h3');
 infoTextScheduleHeading.textContent = 'Hours of Operation';
 
-const infoTextSchedule = createElement('ul');
+const infoTextSchedule = createElement('ul', 'info__text--hours');
 const infoTextScheduleContent = [
   'Monday: 8am - 8pm',
   'Tuesday: 8am - 8pm',
@@ -86,6 +88,7 @@ for (let item of infoTextScheduleContent) {
 infoText.append(infoTextScheduleHeading, infoTextSchedule);
 
 const infoMap = createElement('div', 'info__map');
+infoMap.innerHTML = Map;
 info.append(infoMap);
 
 /******************/
@@ -133,6 +136,7 @@ const images = [
   Image3,
   Image4,
   Image5,
+  Image1,
 ];
 
 for (let src of images) {
