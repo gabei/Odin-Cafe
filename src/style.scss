@@ -130,7 +130,13 @@ ________________________________*/
 /* header
 ________________________________*/
 .hero {
-  background: $color--linen;
+  background: linear-gradient(
+      to bottom right,
+      rgba($color---green-dark, 0.7),
+      rgba($color---green-light, 0.1)
+    ),
+    url('./assets/images/cafe3.jpg');
+  background-size: cover;
   height: 90vh;
   width: 100%;
   display: flex;
@@ -139,6 +145,8 @@ ________________________________*/
     position: absolute;
     top: 50%;
     left: 10%;
+    color: $color--white;
+    text-shadow: 1px 1px 1px rgba($color--grey, 0.6);
   }
 }
 
