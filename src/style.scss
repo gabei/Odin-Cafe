@@ -205,9 +205,12 @@ ________________________________*/
     }
 
     &:nth-child(2n) {
+      grid-column: span 2;
     }
 
-    &: nth-child(4n);
+    &:nth-child(4n) {
+      grid-row: span 2;
+    }
   }
 
   &:nth-child(2n) {
