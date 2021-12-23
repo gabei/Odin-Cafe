@@ -159,6 +159,6 @@ const footerLeft = createElement('div', 'footer__left');
 const footerRight = createElement('div', 'footer__right');
 footer.append(footerLeft, footerRight);
 
-footerLeft.textContent = 'Odin Cafe | Austin, TX';
+footerLeft.textContent = 'Odin Brew | Austin, TX';
 footerRight.textContent = "Order online - or don't. Whatever.";
 footerRight.append(orderOnlineButton);
