@@ -165,4 +165,4 @@ footer.append(footerLeft, footerRight);
 
 footerLeft.textContent = 'Odin Brew | Austin, TX';
 footerRight.textContent = "Order online - or don't. Whatever.";
-footerRight.append(orderOnlineButton);
+//footerRight.append(orderOnlineButton);
