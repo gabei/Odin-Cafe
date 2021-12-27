@@ -45,6 +45,16 @@ ________________________________*/
   border-bottom: 1px solid rgba($color--white, 0.3);
 }
 
+/* section spacing
+________________________________*/
+@mixin section-content {
+  padding: 10rem 3rem;
+}
+
+@mixin section-wide {
+  padding: 10rem 0rem;
+}
+
 /****************************/
 /****************************/
 /****************************/
@@ -126,6 +136,7 @@ ________________________________*/
   &__menu {
     display: flex;
     align-items: flex-end;
+    padding-right: 2rem;
 
     & ul {
       @include ul-default;
@@ -177,7 +188,7 @@ ________________________________*/
 /* info
 ________________________________*/
 .info {
-  padding: 4rem;
+  @include section-content;
   display: flex;
   justify-content: space-evenly;
 
@@ -195,7 +206,9 @@ ________________________________*/
 /* order online
 ________________________________*/
 .order-online {
-  padding: 4rem;
+  @include section-content;
+  background: $color---green-light;
+  color: $color--white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,6 +233,7 @@ ________________________________*/
 /* images
 ________________________________*/
 .image-mason {
+  @include section-wide;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
