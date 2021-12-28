@@ -146,6 +146,7 @@ ________________________________*/
   justify-content: space-between;
   align-self: flex-start;
   width: 100%;
+  background: $color---green-light;
 
   & > * {
     display: inline-block;
@@ -171,7 +172,6 @@ ________________________________*/
 
     & li {
       display: inline-block;
-      padding: 1rem;
       border-bottom: 1px solid transparent;
       transition: $transition-default;
 
@@ -183,6 +183,7 @@ ________________________________*/
       & a {
         text-decoration: none;
         color: $color--white;
+        padding: 1rem;
       }
     }
   }

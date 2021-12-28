@@ -16,4 +16,8 @@ function addClasses(element, ...classes) {
   }
 }
 
-export { createElement, addClasses };
+function clear(element) {
+  element.textContent = '';
+}
+
+export { createElement, addClasses, clear };

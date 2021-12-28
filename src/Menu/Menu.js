@@ -1,13 +1,10 @@
 import { createElement } from '../DOM/DOM';
-import Header from '../Header/Header';
 import MenuData from '../assets/menu.json';
-import Footer from '../Footer/Footer';
 
 const Menu = createElement('div', 'Menu');
 
 /* header navigation and text */
 const menuHeader = createElement('section', 'Menu__header');
-menuHeader.append(Header);
 
 const menuHeaderText = createElement('h1', 'Menu__header--text');
 menuHeaderText.textContent = 'Our Menu';
@@ -47,6 +44,6 @@ for (let section in MenuData) {
   });
 }
 
-Menu.append(menuHeader, ourMenu, Footer);
+Menu.append(menuHeader, ourMenu);
 
 export default Menu;

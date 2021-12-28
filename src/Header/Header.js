@@ -1,4 +1,4 @@
-import { createElement } from '../DOM/DOM';
+import { createElement, clear } from '../DOM/DOM';
 import OdinBrewLogo from '../assets/images/OdinBrewLogo.png';
 
 const Header = createElement('section', 'header');
@@ -31,3 +31,13 @@ for (let item of menuItems) {
 Header.appendChild(menu);
 
 export default Header;
+
+// menuList.addEventListener(
+//   'click',
+//   function (e) {
+//     if (e.target.nodeName === 'A') {
+//       clear(document.body);
+//     }
+//   },
+//   true
+// );
