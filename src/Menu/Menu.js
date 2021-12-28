@@ -15,11 +15,14 @@ menuHeader.append(menuHeaderText);
 /* main menu */
 const ourMenu = createElement('div', 'Menu__ourMenu');
 
-const fullMenu = MenuData['menuItems'];
-const espressoMenu = fullMenu[0];
-const latteMenu = fullMenu[1];
-const coffeeMenu = fullMenu[2];
+/* menu data */
+const espressoMenu = MenuData['menuItems'][0];
+const latteMenu = MenuData['menuItems'][1];
+const coffeeMenu = MenuData['menuItems'][2];
 console.log(espressoMenu);
+console.log(latteMenu);
+console.log(coffeeMenu);
 
 Menu.append(menuHeader, ourMenu);
+
 export default Menu;
