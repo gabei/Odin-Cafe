@@ -1,0 +1,31 @@
+{
+  "menuItems":
+    [
+      {
+        "Espresso": {
+          "Espresso": "Affogato etsy unicorn cronut austin four dollar toast, skateboard enamel pin.",
+          "Latte": "Poke echo park yuccie palo santo before they sold out flannel typewriter thundercats.",
+          "Cortado": "Pop-up bitters echo park YOLO, chia knausgaard shaman jean shorts dreamcatcher normcore roof party blog.",
+          "Americano": "asymmetrical drinking vinegar bicycle rights. Actually vaporware enamel pin, hell of adaptogen plaid jean shorts hashtag.",
+          "Cappuccino": "Swag put a bird on it roof party, celiac vape fingerstache venmo green juice tattooed fam cray."
+        }
+      },
+      {
+        "Craft Lattes": {
+          "Odin's Beard": "Affogato etsy unicorn cronut austin four dollar toast, skateboard enamel pin.",
+          "Thunder Horn": "Poke echo park yuccie palo santo before they sold out flannel typewriter thundercats.",
+          "Chai Tea Latte": "Pop-up bitters echo park YOLO, chia knausgaard shaman jean shorts dreamcatcher normcore roof party blog.",
+          "Spring in Valhalla": "asymmetrical drinking vinegar bicycle rights. Actually vaporware enamel pin, hell of adaptogen plaid jean shorts hashtag."
+          }
+      },
+      {
+        "Coffees": {
+          "Coffee": "Affogato etsy unicorn cronut austin four dollar toast, skateboard enamel pin.",
+          "Asgardian Mud": "Poke echo park yuccie palo santo before they sold out flannel typewriter thundercats.",
+          "The Hammer": "Pop-up bitters echo park YOLO, chia knausgaard shaman jean shorts dreamcatcher normcore roof party blog.",
+          "Frost Brew": "asymmetrical drinking vinegar bicycle rights. Actually vaporware enamel pin, hell of adaptogen plaid jean shorts hashtag."
+        }
+    }
+  ]
+
+}

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const json = require('./src/assets/menu.json');
 
 module.exports = {
   mode: 'development',
@@ -28,6 +29,10 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: 'html-loader',
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
       },
     ],
   },
