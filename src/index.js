@@ -7,18 +7,14 @@ import Menu from './Menu/Menu';
 import './style.scss';
 
 const Content = createElement('div', 'content');
-document.body.append(Header, Content);
-
-Content.append(Home);
-
-Content.append(Footer);
+document.body.append(Header, Content, Home, Footer);
 
 // navigation
 const links = document.querySelector('.header__menu');
+
 links.addEventListener('click', function (e) {
-  if (e.target.nodeName === 'A') {
-    changePage(e.target.textContent);
-  }
+  let pageName = e.target.textContent;
+  e.target.nodeName === 'A' ? changePage(pageName) : null;
 });
 
 function changePage(page) {
@@ -35,5 +31,3 @@ function changePage(page) {
       break;
   }
 }
-
-console.log(links);
