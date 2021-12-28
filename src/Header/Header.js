@@ -31,13 +31,3 @@ for (let item of menuItems) {
 Header.appendChild(menu);
 
 export default Header;
-
-// menuList.addEventListener(
-//   'click',
-//   function (e) {
-//     if (e.target.nodeName === 'A') {
-//       clear(document.body);
-//     }
-//   },
-//   true
-// );

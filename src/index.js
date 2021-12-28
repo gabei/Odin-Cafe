@@ -1,4 +1,4 @@
-import { createElement } from './DOM/DOM.js';
+import { createElement, clear } from './DOM/DOM.js';
 
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
@@ -22,13 +22,13 @@ links.addEventListener('click', function (e) {
 });
 
 function changePage(page) {
+  clear(Content);
+
   switch (page) {
     case 'Home':
-      Content.textContent = '';
       Content.append(Home);
       break;
     case 'Menu':
-      Content.textContent = '';
       Content.append(Menu);
       break;
     case 'Contact':
