@@ -13,15 +13,40 @@ menuHeaderText.textContent = 'Our Menu';
 menuHeader.append(menuHeaderText);
 
 /* main menu */
-const ourMenu = createElement('div', 'Menu__ourMenu');
+const ourMenu = createElement('div', 'Menu__our-menu');
 
 /* menu data */
-const espressoMenu = MenuData['menuItems'][0];
-const latteMenu = MenuData['menuItems'][1];
-const coffeeMenu = MenuData['menuItems'][2];
-console.log(espressoMenu);
-console.log(latteMenu);
-console.log(coffeeMenu);
+const espressoMenu = MenuData['Espresso'];
+const latteMenu = MenuData[1];
+const coffeeMenu = MenuData[2];
+
+// espressoMenu.forEach((item) => {
+//   let titles = Object.keys(item);
+//   let script = Object.values(item);
+//   let text = titles + '\n' + script;
+//   console.log(text);
+// });
+
+for (let section in MenuData) {
+  let newSection = createElement('div', 'Menu__our-menu__section');
+  ourMenu.append(newSection);
+
+  let sectionTitle = createElement('h2', 'Menu__our-menu__section-title');
+  sectionTitle.textContent = section;
+
+  newSection.append(sectionTitle);
+
+  MenuData[section].forEach((item) => {
+    let itemName = createElement('h4', 'Menu__our-menu__section-item');
+    let itemInfo = createElement('p', 'Menu__our-menu__section-item--info');
+    itemName.textContent = Object.keys(item);
+    itemInfo.textContent = Object.values(item);
+
+    newSection.append(itemName, itemInfo);
+  });
+
+  //console.log(Object.values(MenuData[section]));
+}
 
 Menu.append(menuHeader, ourMenu);
 
