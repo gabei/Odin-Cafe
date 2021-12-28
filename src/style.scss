@@ -135,6 +135,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Frank Ruhl Libre', serif;
+  color: $color--black;
 }
 
 /* header
@@ -314,6 +315,31 @@ ________________________________*/
       @include header-text-gradient;
       color: $color--white;
       padding: 5rem 3rem;
+    }
+  }
+}
+
+/*******************************/
+/********** Menu Page **********/
+/*******************************/
+.Menu {
+  &__our-menu {
+    padding: 0rem 3rem;
+
+    &__section {
+      padding: 2rem 0;
+
+      &-title {
+        color: $color---green-light;
+        border-bottom: 1px solid $color---green-light;
+        margin-bottom: 2rem;
+      }
+
+      &-item {
+        margin-top: 1rem;
+        color: $color---green-dark;
+        font-weight: 400;
+      }
     }
   }
 }

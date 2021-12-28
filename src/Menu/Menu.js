@@ -1,6 +1,7 @@
 import { createElement } from '../DOM/DOM';
 import Header from '../Header/Header';
 import MenuData from '../assets/menu.json';
+import Footer from '../Footer/Footer';
 
 const Menu = createElement('div', 'Menu');
 
@@ -44,10 +45,8 @@ for (let section in MenuData) {
 
     newSection.append(itemName, itemInfo);
   });
-
-  //console.log(Object.values(MenuData[section]));
 }
 
-Menu.append(menuHeader, ourMenu);
+Menu.append(menuHeader, ourMenu, Footer);
 
 export default Menu;
