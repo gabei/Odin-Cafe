@@ -7,7 +7,8 @@ import Menu from './Menu/Menu';
 import './style.scss';
 
 const Content = createElement('div', 'content');
-document.body.append(Header, Content, Home, Footer);
+document.body.append(Header, Content, Footer);
+Content.append(Home);
 
 // navigation
 const links = document.querySelector('.header__menu');

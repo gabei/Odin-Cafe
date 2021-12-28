@@ -3,28 +3,18 @@ import MenuData from '../assets/menu.json';
 
 const Menu = createElement('div', 'Menu');
 
-/* header navigation and text */
+/* header text */
 const menuHeader = createElement('section', 'Menu__header');
 
 const menuHeaderText = createElement('h1', 'Menu__header--text');
 menuHeaderText.textContent = 'Our Menu';
+
 menuHeader.append(menuHeaderText);
 
 /* main menu */
 const ourMenu = createElement('div', 'Menu__our-menu');
 
 /* menu data */
-const espressoMenu = MenuData['Espresso'];
-const latteMenu = MenuData[1];
-const coffeeMenu = MenuData[2];
-
-// espressoMenu.forEach((item) => {
-//   let titles = Object.keys(item);
-//   let script = Object.values(item);
-//   let text = titles + '\n' + script;
-//   console.log(text);
-// });
-
 for (let section in MenuData) {
   let newSection = createElement('div', 'Menu__our-menu__section');
   ourMenu.append(newSection);
