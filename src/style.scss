@@ -37,6 +37,18 @@ ________________________________*/
   }
 }
 
+@mixin btn-alternate {
+  @include btn-default;
+
+  background: transparent;
+  border: 1px solid $color--white;
+  color: $color--white;
+
+  &:hover {
+    border-color: $color---gold;
+  }
+}
+
 /* float clear-fix 
 ________________________________*/
 @mixin clear-fix {
@@ -192,6 +204,13 @@ ________________________________*/
     top: 50%;
     left: 10%;
     color: $color--white;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-button {
+      @include btn-alternate;
+      margin-top: 2rem;
+    }
   }
 }
 
