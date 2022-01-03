@@ -81,9 +81,9 @@ ________________________________*/
   padding: 10rem 0rem;
 }
 
-/****************************/
-/****************************/
-/****************************/
+/*******************************/
+/********** Variables **********/
+/*******************************/
 
 /* colors
 ________________________________*/
@@ -99,6 +99,32 @@ $color--white: #fafafa;
 /* transitions
 ________________________________*/
 $transition-default: 0.2s all;
+
+/* break points
+________________________________*/
+$tablet: 666px;
+
+/************************************/
+/********** Reset / Global **********/
+/************************************/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Frank Ruhl Libre', serif;
+  color: $color--black;
+}
 
 /* font sizes
 ________________________________*/
@@ -118,26 +144,9 @@ h4 {
   font-size: 2rem;
 }
 
-/* reset
-________________________________*/
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: 'Frank Ruhl Libre', serif;
-  color: $color--black;
-}
+/******************************/
+/********** Sections **********/
+/******************************/
 
 /* header
 ________________________________*/
@@ -220,6 +229,12 @@ ________________________________*/
   @include section-content;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  // @media screen and (max-width: $tablet) {
+  //   background: transparent;
+  //   flex
+  // }
 
   &__text {
     &--hours {

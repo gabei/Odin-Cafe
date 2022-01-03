@@ -16,11 +16,7 @@ const menu = createElement('div', 'header__menu');
 const menuList = createElement('ul');
 menu.appendChild(menuList);
 
-const menuItems = [
-  '<a href="#">Home</a>',
-  '<a href="#">Menu</a>',
-  '<a href="#">Contact</a>',
-];
+const menuItems = ['<a href="#">Home</a>', '<a href="#">Menu</a>'];
 
 for (let item of menuItems) {
   let newItem = createElement('li');
