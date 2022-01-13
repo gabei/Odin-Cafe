@@ -1,3 +1,6 @@
+@use './variables.scss';
+@use './mixins.scss';
+
 /***************************/
 /********** Fonts **********/
 /***************************/
@@ -13,7 +16,7 @@
       rgba($color---green-dark, 0.7),
       rgba($color---green-light, 0.1)
     ),
-    url('./assets/images/cafe3.jpg');
+    url('../assets/images/cafe3.jpg');
   background-size: cover;
 }
 

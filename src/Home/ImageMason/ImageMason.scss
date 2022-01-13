@@ -1,0 +1,38 @@
+//use mixins
+
+.image-mason {
+  @include section-wide;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:nth-child(2n) {
+      grid-column: span 2;
+    }
+
+    &:nth-child(4n) {
+      grid-row: span 2;
+    }
+  }
+
+  &:nth-child(2n) {
+    grid-column: span 2;
+  }
+
+  &:nth-child(4n) {
+    grid-row: span 2;
+  }
+}

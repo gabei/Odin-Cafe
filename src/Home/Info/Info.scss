@@ -1,0 +1,24 @@
+//include variables
+//include mixins
+
+.info {
+  @include section-content;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  // @media screen and (max-width: $tablet) {
+  //   background: transparent;
+  //   flex
+  // }
+
+  &__text {
+    &--hours {
+      @include ul-default;
+    }
+  }
+
+  &__map {
+    max-width: 50%;
+  }
+}

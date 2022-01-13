@@ -1,0 +1,74 @@
+/* header background */
+@mixin header-background {
+  background: linear-gradient(
+      to bottom right,
+      rgba($color---green-dark, 0.7),
+      rgba($color---green-light, 0.1)
+    ),
+    url('../assets/images/cafe3.jpg');
+  background-size: cover;
+}
+
+@mixin header-text-shadow {
+  text-shadow: 1px 1px 2px rgba($color--grey, 0.6);
+}
+
+/* link button 
+________________________________*/
+@mixin btn-default {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: $color---green-light;
+  color: $color--white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition-default;
+
+  &:hover {
+    background: $color---gold;
+  }
+}
+
+@mixin btn-alternate {
+  @include btn-default;
+
+  background: transparent;
+  border: 1px solid $color--white;
+  color: $color--white;
+
+  &:hover {
+    border-color: $color---gold;
+  }
+}
+
+/* float clear-fix 
+________________________________*/
+@mixin clear-fix {
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+/* ul decoration
+________________________________*/
+@mixin ul-default {
+  list-style-type: none;
+}
+
+/* menu borders and hovers
+________________________________*/
+@mixin menu-borders {
+  border-bottom: 1px solid rgba($color--white, 0.3);
+}
+
+/* section spacing
+________________________________*/
+@mixin section-content {
+  padding: 10rem 3rem;
+}
+
+@mixin section-wide {
+  padding: 10rem 0rem;
+}

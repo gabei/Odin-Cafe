@@ -1,0 +1,24 @@
+//use variables
+//use mixins
+
+.hero {
+  @include header-background;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+
+  &__text {
+    @include header-text-shadow;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: $color--white;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-button {
+      @include btn-alternate;
+      margin-top: 2rem;
+    }
+  }
+}
