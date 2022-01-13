@@ -1,7 +1,7 @@
-@use '../css/variables.scss';
+@use '../css/variables.scss' as v;
 
 .footer {
-  border-top: 1px solid $color--grey;
+  border-top: 1px solid v.$color--grey;
   display: flex;
   justify-content: space-between;
   align-items: center;

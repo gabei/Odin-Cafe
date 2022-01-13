@@ -1,13 +1,13 @@
-@use '../css/variables.scss';
-@use '../css/mixins.scss';
+@use '../css/variables.scss' as v;
+@use '../css/mixins.scss' as m;
 
 .header {
-  @include menu-borders;
+  @include m.menu-borders;
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
   width: 100%;
-  background: $color---green-light;
+  background: v.$color---green-light;
 
   & > * {
     display: inline-block;
@@ -27,23 +27,23 @@
     padding-right: 2rem;
 
     & ul {
-      @include ul-default;
+      @include m.ul-default;
       margin-left: 2rem;
     }
 
     & li {
       display: inline-block;
       border-bottom: 1px solid transparent;
-      transition: $transition-default;
+      transition: v.$transition-default;
 
       &:hover {
-        @include menu-borders;
-        border-color: $color--white;
+        @include m.menu-borders;
+        border-color: v.$color--white;
       }
 
       & a {
         text-decoration: none;
-        color: $color--white;
+        color: v.$color--white;
         padding: 1rem;
       }
     }

@@ -1,10 +1,10 @@
-@use '../css/variables.scss';
-@use '../css/mixins.scss';
+@use '../../css/variables.scss' as v;
+@use '../../css/mixins.scss' as m;
 
 .order-online {
-  @include section-content;
-  background: $color---green-dark;
-  color: $color--white;
+  @include m.section-content;
+  background: v.$color---green-dark;
+  color: v.$color--white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +22,6 @@
   }
 
   &__button {
-    @include btn-default;
+    @include m.btn-default;
   }
 }
