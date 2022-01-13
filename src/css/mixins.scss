@@ -1,3 +1,5 @@
+@use './variables.scss';
+
 /* header background */
 @mixin header-background {
   background: linear-gradient(

@@ -1,5 +1,5 @@
-//use variables
-//use mixins
+@use '../css/variables.scss';
+@use '../css/mixins.scss';
 
 .header {
   @include menu-borders;

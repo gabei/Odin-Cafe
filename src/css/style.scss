@@ -1,6 +1,11 @@
 @use './variables.scss';
 @use './mixins.scss';
 
+@use '../Header/Header.scss';
+@use '../Footer/footer.scss';
+@use '../Menu/menu.scss';
+@use '../Home/Home.scss';
+
 /***************************/
 /********** Fonts **********/
 /***************************/

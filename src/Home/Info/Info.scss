@@ -1,5 +1,5 @@
-//include variables
-//include mixins
+@use '../css/variables.scss';
+@use '../css/mixins.scss';
 
 .info {
   @include section-content;
