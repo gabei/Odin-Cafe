@@ -1,0 +1,52 @@
+@use './variables.scss' as v;
+@use './mixins.scss' as m;
+
+@use '../Header/Header.scss';
+@use '../Footer/footer.scss';
+@use '../Menu/menu.scss';
+@use '../Home/Home.scss';
+
+/***************************/
+/********** Fonts **********/
+/***************************/
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700&display=swap');
+
+/************************************/
+/********** Reset / Global **********/
+/************************************/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Frank Ruhl Libre', serif;
+  color: v.$color--black;
+}
+
+/* font sizes
+________________________________*/
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}

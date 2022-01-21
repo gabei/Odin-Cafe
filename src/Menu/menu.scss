@@ -1,0 +1,34 @@
+@use '../css/variables.scss' as v;
+@use '../css/mixins.scss' as m;
+
+.Menu {
+  &__header {
+    @include m.header-background;
+
+    &--text {
+      @include m.header-text-shadow;
+      color: v.$color--white;
+      padding: 5rem 3rem;
+    }
+  }
+
+  &__our-menu {
+    padding: 2rem 3rem;
+
+    &__section {
+      padding: 2rem 0;
+
+      &-title {
+        color: v.$color---green-light;
+        border-bottom: 1px solid v.$color---green-light;
+        margin-bottom: 2rem;
+      }
+
+      &-item {
+        margin-top: 1rem;
+        color: v.$color---green-dark;
+        font-weight: 400;
+      }
+    }
+  }
+}

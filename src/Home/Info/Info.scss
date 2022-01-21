@@ -1,0 +1,32 @@
+@use '../../css/mixins.scss' as m;
+@use '../../css/breakpoints.scss' as break;
+
+.info {
+  @include m.section-content;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  &__text {
+    &--hours {
+      @include m.ul-default;
+    }
+  }
+
+  &__map {
+    max-width: 50%;
+  }
+
+  //media
+  @include break.screen-medium {
+    & > div {
+      width: 100%;
+    }
+
+    &__text {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+}

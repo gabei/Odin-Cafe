@@ -1,0 +1,51 @@
+@use '../css/variables.scss' as v;
+@use '../css/mixins.scss' as m;
+
+.header {
+  @include m.menu-borders;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 100%;
+  background: v.$color---green-light;
+
+  & > * {
+    display: inline-block;
+  }
+
+  &__logo {
+    padding: 3rem 0 0 3rem;
+
+    & img {
+      max-width: 10rem;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 2rem;
+
+    & ul {
+      @include m.ul-default;
+      margin-left: 2rem;
+    }
+
+    & li {
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      transition: v.$transition-default;
+
+      &:hover {
+        @include m.menu-borders;
+        border-color: v.$color--white;
+      }
+
+      & a {
+        text-decoration: none;
+        color: v.$color--white;
+        padding: 1rem;
+      }
+    }
+  }
+}

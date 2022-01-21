@@ -1,0 +1,15 @@
+@use '../css/variables.scss' as v;
+
+.footer {
+  border-top: 1px solid v.$color--grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  &__right {
+    & a {
+      margin-left: 1rem;
+    }
+  }
+}

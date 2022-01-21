@@ -1,0 +1,28 @@
+@use '../../css/variables.scss' as v;
+@use '../../css/mixins.scss' as m;
+
+.hero {
+  @include m.header-background;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+
+  &__text {
+    @include m.header-text-shadow;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: v.$color--white;
+    display: flex;
+    flex-wrap: wrap;
+
+    & h1 {
+      width: 100%;
+    }
+
+    &-button {
+      @include m.btn-alternate;
+      margin-top: 2rem;
+    }
+  }
+}
