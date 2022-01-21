@@ -16,6 +16,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    & h1 {
+      width: 100%;
+    }
+
     &-button {
       @include m.btn-alternate;
       margin-top: 2rem;

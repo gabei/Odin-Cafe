@@ -1,0 +1,8 @@
+//screen sizes
+$screen-medium: 650px;
+
+@mixin screen-medium {
+  @media screen and (max-width: #{$screen-medium}) {
+    @content;
+  }
+}
